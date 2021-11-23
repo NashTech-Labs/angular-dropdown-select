@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Dropdown Select ( Multi Selction & Single Selection)
 
-Angular Material Library gives us a very interesting feature in <mat-select> and allow us to make multiple selection by adding the property multiple.By default <mat-select> configured to single-selection mode. It works only on the initialization of components. We can not change its property after the initialization of the component. 
+Angular Material Library gives us a very interesting feature in `<mat-select>` and allow us to make multiple selection by adding the property multiple.By default `<mat-select>` configured to single-selection mode. It works only on the initialization of components. We can not change its property after the initialization of the component. 
