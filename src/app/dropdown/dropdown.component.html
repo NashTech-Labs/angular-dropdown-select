@@ -1,0 +1,37 @@
+
+<div style=" margin-left: 30px; display: flex;flex-direction: column; width:600px" >
+<mat-form-field appearance="outline" >
+  <mat-label>Multi Select</mat-label>
+  <mat-select
+    [multiple]="allowMultiSelections"
+    [formControl]="select"
+    multiple
+  >
+    <mat-option *ngFor="let item of dropDownData.options" [value]="item">{{
+      item
+    }}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="outline" >
+   <mat-label>Single Select</mat-label>
+  <mat-select
+    [multiple]="false"
+    [formControl]="select"
+    multiple
+  >
+    <mat-option *ngFor="let item of dropDownData.options" [value]="item">{{
+      item
+    }}</mat-option>
+  </mat-select>
+</mat-form-field>
+<button style="width: 200px;height: 50px;background-color: blue; color: white;font-size: 20px;"
+  [disabled]="select.invalid"
+  (click)="onSelectItemFromDropdown()"
+  mat-button
+>
+ check Select
+</button>
+
+<div>{{options}}</div>
+</div>
